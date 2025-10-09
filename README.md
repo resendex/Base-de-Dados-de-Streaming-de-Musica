@@ -4,7 +4,7 @@
 
 O que precisa de fazer? / Que ações deve suportar / A Base de Dados suporta ou não os requisitos?
 
-- Criar playlists.
+- Criar playlists
 
 - Pesquisar álbuns
 
@@ -55,8 +55,6 @@ O que precisa de fazer? / Que ações deve suportar / A Base de Dados suporta ou
 - Gerenciamento de assinaturas pagas
 
 **Requisitos Não-Fucnionais**
-
-Que Desempenho deve ter o sistema? / Qual a sua Usabilidade e Segurança? / Serão mais difíceis de verificar que os Requisitos Funcionais?
 
 _Desempenho_
 
@@ -127,3 +125,128 @@ _Eficiência_
 - Os recursos do servidor devem ser otimizados
 
 - Deve ser realizada a compressão dos dados para reduzir o uso de largura de banda
+
+**Descrição Detalhada do Domínio de Aplicação**
+
+A plataforma de streaming de música é um sistema digital abrangente que permite aos utilizadores aceder, organizar e reproduzir conteúdo musical através da Internet. Este domínio de aplicação engloba a gestão de um vasto catálogo de conteúdo áudio, perfis de utilizadores, sistemas de recomendação personalizados e funcionalidades sociais de partilha musical.
+
+**1. Biblioteca de Músicas e Álbuns**
+
+- **Músicas individuais** com metadados completos (título, duração, ano de lançamento, letra, genéro)
+
+- **Álbuns** organizados por artistas, com informação sobre data de lançamento e arte de capa
+
+- **Artistas** com biografias, discografias e informações sobre colaborações
+
+- **Géneros musicais** para categorização e descoberta de conteúdo
+
+- **Podcasts** como extensão do conteúdo áudio disponível
+
+- Suporte para múltiplos níveis de qualidade de áudio (baixa, média, alta, *lossless*)
+
+**2. Sistema de Utilizadores e Playlists**
+
+O sistema centra-se na experiência personalizada do utilizador através de:
+
+- **Perfis individuais** com dados pessoais,
+preferências musicais e histórico de audição
+
+- **Playlists personalizadas** criadas pelos utilizadores
+
+- **Playlists recomendadas** geradas automaticamente com base no histórico e preferências
+
+- **Sistema de favoritos** (like/dislike) para músicas, álbuns e artistas
+
+- **Sincronização multi-dispositivo** que permite continuidade da experiência em diferentes plataformas
+
+- **Jam sessions** - funcionalidade social que permite a múltiplos utilizadores ouvirem música sincronizadamente
+
+**3. Sistema de Subscrições**
+
+Modelo de negócio baseado em diferentes níveis de acesso:
+
+- **Assinaturas pagas** com diferentes planos (Individual, Familiar, Estudante, Premium)
+
+- **Gersão de períodos de subscrição** (data de início, renovação, cancelamento)
+
+- **Controlo de funcionalidades** por tipo de assinatura
+
+- **Download offline** disponível apenas para subscritores premium
+
+- **Qualidade de áudio diferenciada** conforme o plano
+
+**4. Recomendações Personalizadas**
+
+Sistema inteligente de sugestões baseado em:
+
+- **Análise do histórico de audição** individual
+
+- **Padrões de preferências** por género, artista e época
+
+- **Sistema de likes/dislikes** em músicas e géneros
+
+- **Descoberta de novos artistas** similares aos favoritos do utilizador
+
+- **Notificações de lançamentos** de artistas seguidos pelo utilizador
+
+- **Algoritmos de machine learning** para melhorar continuamente as recomendações
+
+**5. Estatísticas de Reprodução**
+
+Análise detalhada do comportamento de audição:
+
+- **Tempo total de audição** (anual, mensal e semanal)
+
+- **Artistas mais ouvidos** com rankings personalizados
+
+- **Géneros favoritos** baseados em tempo de audição
+
+- **Músicas mais reproduzidas** individual e globalmente
+
+- **Histórico completo de reprodução** com timestamps e dispositivo utilizado
+
+- **Estatística comparativas** (ex: "Top 1% de ouvintes de um artista")
+
+**Casos de Uso Principais**
+
+1. Criar Playlist Personalizada
+
+2. Pesquisar e Reproduzir Música
+
+3. Gerir Assinatura Premium
+
+4. Receber Recomendações Personalizadas
+
+5. Download de Músicas para Modo Offilne
+
+6. Partilhar e Colaborar em Playlist
+
+7. Participar em Jam Session
+
+8. Visualizar Estatísticas Anuais
+
+9. Receber Notificação de Novo Lançamento
+
+10. Gerir Perfil e Preferências
+
+**Stakeholders**
+
+1. Utilizadores Finais
+
+2. Artistas e Produtores Musicais
+
+3. Gravadores e Editoras
+
+4. Administradores do Sistema
+
+5. Equipa de Marketing e Negócios
+
+6. Investidores e Acionistas
+
+7. Reguladores e Entidades Legais
+
+8. Anunciantes (modelo fremium)
+
+9. Fornecedores de Infraestrutura
+
+10. Desenvolvedores de Terceiros
